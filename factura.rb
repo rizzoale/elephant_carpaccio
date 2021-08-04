@@ -9,5 +9,12 @@ if (ARGV.size != 3)
     exit
 end
 
+state = ARGV[2]
+
+if (STATE_TAX[state] == nil)
+    puts "Invalid state"
+    exit
+end
+
 # If all inputs are correct, we can calculate
 puts "Valid amount of inputs! Good job."
