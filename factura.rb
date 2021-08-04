@@ -1,5 +1,9 @@
 # STATE_TAX could be moved to a different file
 STATE_TAX = {
+    "UT" => 0.0685,
+    "NV" => 0.0800,
+    "TX" => 0.0625,
+    "AL" => 0.0400,
     "CA" => 0.0825
 }
 
