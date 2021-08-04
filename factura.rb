@@ -31,4 +31,16 @@ if (STATE_TAX[state] == nil)
 end
 
 # If all inputs are correct, we can calculate
-puts "Valid amount of inputs! Good job."
+puts ""
+puts "#############################"
+puts "# Quantity: #{quantity}"
+puts "# Unit Price: #{unit_price}"
+puts "# -----------------------------"
+puts "# Subtotal: #{quantity*unit_price}"
+puts "# "
+puts "# Discount: - "
+puts "# Tax (after discount): - "
+puts "# -----------------------------"
+puts "# Total: - "
+puts "#############################"
+puts ""
