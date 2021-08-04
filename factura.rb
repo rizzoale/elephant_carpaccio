@@ -1,3 +1,8 @@
+# STATE_TAX could be moved to a different file
+STATE_TAX = {
+    "CA" => 0.0825
+}
+
 # Check for valid inputs
 if (ARGV.size != 3)
     puts "Usage: ruby factura.rb <cantidad> <precio unitario> <estado>"
