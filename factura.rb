@@ -31,16 +31,29 @@ if (STATE_TAX[state] == nil)
 end
 
 # If all inputs are correct, we can calculate
+
+# Calculate discount
+discount = 0
+
+for i in 0..DISCOUNT_TABLE.size-1
+    if quantity*unit_price > DISCOUNT_TABLE[i][0]
+        discount = DISCOUNT_TABLE[i][1]
+    else
+        break
+    end
+end
+
+# Print output
 puts ""
-puts "#############################"
+puts "###############################"
 puts "# Quantity: #{quantity}"
-puts "# Unit Price: #{unit_price}"
+puts "# Unit Price: $#{unit_price}"
 puts "# -----------------------------"
-puts "# Subtotal: #{quantity*unit_price}"
+puts "# Subtotal: $#{quantity*unit_price}"
 puts "# "
-puts "# Discount: - "
+puts "# Discount: $#{quantity*unit_price*discount}"
 puts "# Tax (after discount): - "
 puts "# -----------------------------"
 puts "# Total: - "
-puts "#############################"
+puts "###############################"
 puts ""
