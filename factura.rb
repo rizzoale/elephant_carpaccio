@@ -32,7 +32,7 @@ end
 
 # If all inputs are correct, we can calculate
 
-# Calculate discount
+# Get discount due to quantity
 discount = 0
 
 for i in 0..DISCOUNT_TABLE.size-1
@@ -43,6 +43,9 @@ for i in 0..DISCOUNT_TABLE.size-1
     end
 end
 
+# Get tax value for state
+tax = STATE_TAX[state]
+
 # Print output
 puts ""
 puts "###############################"
@@ -52,7 +55,7 @@ puts "# -----------------------------"
 puts "# Subtotal: $#{quantity*unit_price}"
 puts "# "
 puts "# Discount: $#{quantity*unit_price*discount}"
-puts "# Tax (after discount): - "
+puts "# Tax (after discount): $#{quantity*unit_price*(1-discount)*tax}"
 puts "# -----------------------------"
 puts "# Total: - "
 puts "###############################"
