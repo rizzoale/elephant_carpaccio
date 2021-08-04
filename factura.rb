@@ -12,7 +12,8 @@ end
 state = ARGV[2]
 
 if (STATE_TAX[state] == nil)
-    puts "Invalid state"
+    puts "Invalid state. Please provide a valid state from the following options:"
+    puts STATE_TAX.keys
     exit
 end
 
