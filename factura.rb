@@ -3,6 +3,12 @@ STATE_TAX = {
     "CA" => 0.0825
 }
 
+# DISCOUNT_TABLE could be moved to a different file
+DISCOUNT_TABLE = [
+    [1000, 0.03],
+    [5000, 0.05]
+]
+
 # Check for valid inputs
 if (ARGV.size != 3)
     puts "Usage: ruby factura.rb <quantity> <unit price> <state>"
