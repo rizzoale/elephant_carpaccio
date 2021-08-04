@@ -10,7 +10,10 @@ STATE_TAX = {
 # DISCOUNT_TABLE could be moved to a different file
 DISCOUNT_TABLE = [
     [1000, 0.03],
-    [5000, 0.05]
+    [5000, 0.05],
+    [7000, 0.07],
+    [10000, 0.10],
+    [50000, 0.15]
 ]
 
 # Check for valid inputs
